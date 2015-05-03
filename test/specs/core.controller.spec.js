@@ -1,6 +1,6 @@
 describe('Core app', function() {
 
-  var homeController, app;
+  var coreController, app;
 
 	beforeEach(function (){
   	app = module('testSat');
@@ -9,7 +9,7 @@ describe('Core app', function() {
   beforeEach(function() {
     inject(function($controller, $rootScope) {
       scope = $rootScope.$new();
-      homeController = $controller('homeController', {
+      coreController = $controller('coreController', {
         $scope: scope
       });
     });
@@ -21,11 +21,11 @@ describe('Core app', function() {
   });
 
   it('should have a home controller', function() {
-    expect(homeController).toBeDefined();
+    expect(coreController).toBeDefined();
   });
 
   it('should have a title', function() {
-    expect(homeController.title).toBeDefined();
+    expect(coreController.title).toBeDefined();
   });
 
 });
