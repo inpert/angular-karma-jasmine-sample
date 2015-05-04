@@ -12,3 +12,5 @@
 
 ## To open in the browser
 - http://localhost:8000/#/
+
+`Reference for the Github api https://developer.github.com/v3/repos/#list-your-repositories`
